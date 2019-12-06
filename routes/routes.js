@@ -1,5 +1,6 @@
 const express=require('express');
 const router=express.Router();
+const backendHelper=require('../helpers/backendHelper');
 
 router.post('/monitoring',(req, res, next)=>{
 
@@ -18,9 +19,9 @@ router.get('/test',(req,res,next)=>{
 })
 
 router.post('/getBayDetails',(req,res,nex)=>{
-        let stuff=req.body
-
-        res.send(stuff.id)
+        let bayID=req.body.bayID
+        res.send(backendHelper.fetchDetailsByBayID(bayID))
+        
 });
 
 
