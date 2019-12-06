@@ -21,7 +21,7 @@ const bayDetails=[
     {
         id:4,
         name:"",
-        organisation:"optus",
+        organisation:"Singtel",
         resource_number:120
     }
 ]
