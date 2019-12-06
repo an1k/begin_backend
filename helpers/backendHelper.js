@@ -4,7 +4,7 @@ const bayDetails=[
         id:1,
         name:"",
         organisation:"optus",
-        resource_number:70
+        resource_number:300
     },
     {
         id:2,
